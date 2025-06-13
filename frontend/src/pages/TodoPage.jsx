@@ -221,7 +221,7 @@ const TodoPage = () => {
           {todos.length === 0 ? (
             <p className="text-center text-gray-500 text-lg">No todos found.</p>
           ) : (
-            <ul className="space-y-4 sm:space-y-6 overflow-y-auto h-50 w-full">
+            <ul className="space-y-4 sm:space-y-6 overflow-y-auto h-screen w-full">
               {todos.map((todo) => (
                 <li
                   key={todo._id}
