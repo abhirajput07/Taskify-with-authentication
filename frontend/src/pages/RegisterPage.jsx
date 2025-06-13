@@ -27,7 +27,7 @@ const RegisterPage = () => {
         email: "",
         password: "",
       });
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       const errorMessage =
         error.response?.data?.message || "Something went wrong";

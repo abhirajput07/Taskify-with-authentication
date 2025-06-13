@@ -7,9 +7,15 @@ import todoRoutes from "./routes/todoRoutes.js";
 const app = express();
 configDotenv();
 connectDB();
+const corsOptions = {
+  origin: ["*"],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+};
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.get("/", (req, res) => {
   res.send("server is running");
