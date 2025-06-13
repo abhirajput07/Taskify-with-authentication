@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { serverUrl } from "../server";
-import { getCookieData, handleLogout } from "../utils/helperFunction.js";
+import { getCookieData } from "../utils/helperFunction.js";
+import { handleLogout } from "../utils/helperFunction.js";
 import toast from "react-hot-toast";
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
@@ -13,6 +14,7 @@ const TodoPage = () => {
     title: "",
     description: "",
   });
+
   const navigate = useNavigate();
   const [currentEditId, setCurrentEditId] = useState(null);
   const [editTodo, setEditTodo] = useState({
@@ -114,7 +116,7 @@ const TodoPage = () => {
 
   const handleLogoutUser = () => {
     handleLogout();
-    navigate("/login");
+    navigate("/");
   };
 
   return (

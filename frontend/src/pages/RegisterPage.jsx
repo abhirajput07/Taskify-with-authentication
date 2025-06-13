@@ -37,7 +37,7 @@ const RegisterPage = () => {
   return (
     <>
       <div className="w-full  p-2 flex justify-center">
-        <div className="max-w-sm rounded border w-full px-[5%] py-[2%] bg-white text-black shadow-2xl shadow-black ">
+        <div className="max-w-sm rounded border w-full px-[5%] md:px-[2%] py-[2%] bg-white text-black shadow-2xl shadow-black ">
           <h1 className="text-3xl mb-5 text-center">Signup</h1>
           <form
             className="flex flex-col justify-between gap-5"
@@ -88,7 +88,7 @@ const RegisterPage = () => {
             </button>
             <span className="text-center">
               Already have an account?{""}
-              <Link to={"/login"} className="text-sm pl-2">
+              <Link to={"/"} className="text-sm pl-2">
                 Login
               </Link>
             </span>

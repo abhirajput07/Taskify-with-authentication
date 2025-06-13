@@ -37,8 +37,8 @@ const LoginPage = () => {
   };
   return (
     <>
-      <div className="w-full  p-2 flex justify-center">
-        <div className="max-w-sm rounded border w-full px-[5%] py-[2%] bg-white text-black shadow-2xl shadow-black ">
+      <div className="w-full p-2 flex justify-center">
+        <div className="max-w-sm rounded border w-full px-[5%] md:px-[2%] py-[2%] bg-white text-black shadow-2xl shadow-black ">
           <h1 className="text-3xl mb-5 text-center">Login</h1>
           <form
             className="flex flex-col justify-between gap-5"
